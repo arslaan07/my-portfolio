@@ -1,0 +1,195 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 265 89% 78%; /* Purple instead of blue */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 10% 3.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 10% 10%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 240 5% 10%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5% 8%; 
+    --input: 240 5% 8%;
+    --ring: 265 89% 78%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-dark text-foreground antialiased overflow-x-hidden font-sans cursor-none;
+    background-color: #0A0A0A;
+  }
+  
+  /* For default cursor on devices that don't support custom cursor */
+  @media (max-width: 768px) {
+    body {
+      @apply cursor-auto;
+    }
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-md bg-dark-100/30 border border-white/5 shadow-lg;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple to-accent2;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 border border-purple text-purple rounded-sm hover:bg-purple/10 transition-all duration-300 ease-out-soft relative overflow-hidden;
+  }
+  
+  .btn-primary::after {
+    content: '';
+    @apply absolute inset-0 bg-purple/20 scale-x-0 origin-left transition-transform duration-300;
+  }
+  
+  .btn-primary:hover::after {
+    @apply scale-x-100;
+  }
+  
+  .hover-trigger .hover-target {
+    @apply opacity-0 transition-opacity duration-300;
+  }
+  
+  .hover-trigger:hover .hover-target {
+    @apply opacity-100;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-8 inline-block relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-1/2 h-px bg-purple;
+  }
+  
+  .section {
+    @apply py-16 md:py-24 px-6 md:px-10 w-full min-h-screen flex items-center;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 0 10px rgba(186, 104, 200, 0.3);
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .mask-radial-faded {
+    mask-image: radial-gradient(circle at center, black 55%, transparent 80%);
+  }
+  
+  .clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+}
+
+/* Define animations for staggered text */
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.word-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.project-card {
+  transform: perspective(2000px) rotateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+.project-card:hover {
+  transform: perspective(2000px) rotateY(10deg);
+}
+
+/* Lightning animation for the subtitle */
+.lightning-text-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.lightning-char {
+  position: relative;
+  display: inline-block;
+  animation: lightning-flash 3s infinite linear;
+}
+
+@keyframes lightning-flash {
+  0%, 90%, 100% {
+    color: var(--tw-text-opacity-current, 1);
+    text-shadow: none;
+  }
+  92% {
+    color: white;
+    text-shadow: 0 0 10px #BA68C8, 0 0 20px #BA68C8, 0 0 30px #BA68C8, 0 0 40px #BA68C8;
+  }
+  94% {
+    color: var(--tw-text-opacity-current, 1);
+    text-shadow: none;
+  }
+  96% {
+    color: white;
+    text-shadow: 0 0 10px #BA68C8, 0 0 20px #BA68C8, 0 0 30px #BA68C8, 0 0 40px #BA68C8, 0 0 50px #BA68C8;
+  }
+  98% {
+    color: var(--tw-text-opacity-current, 1);
+    text-shadow: none;
+  }
+}
