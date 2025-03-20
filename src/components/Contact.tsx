@@ -78,13 +78,13 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Email</div>
-                  <a href="mailto:hello@thelazyprogramr.dev" className="hover:text-electric transition-colors duration-300">
+                  <a href="mailto:arslaanbanday5@gmail.com" className="hover:text-electric transition-colors duration-300">
                     hello@thelazyprogramr.dev
                   </a>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
+              {/* <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full bg-dark-200 flex items-center justify-center">
                   <MessageSquare className="text-electric" size={20} />
                 </div>
@@ -92,32 +92,32 @@ const Contact = () => {
                   <div className="text-sm text-muted-foreground">Discord</div>
                   <div>@thelazyprogramr</div>
                 </div>
-              </div>
+              </div> */}
               
               <div className="pt-8">
                 <div className="text-sm text-muted-foreground mb-3">Follow me on</div>
                 <div className="flex space-x-4">
                   <a 
-                    href="#" 
+                    href="https://github.com/arslaan07" 
                     className="w-10 h-10 rounded-full bg-dark-200 flex items-center justify-center hover:bg-electric/20 transition-colors duration-300 interactive"
                     aria-label="GitHub"
                   >
                     <Github size={18} />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/arslaan-shakeel-aa5885209/" 
                     className="w-10 h-10 rounded-full bg-dark-200 flex items-center justify-center hover:bg-electric/20 transition-colors duration-300 interactive"
                     aria-label="LinkedIn"
                   >
                     <Linkedin size={18} />
                   </a>
-                  <a 
+                  {/* <a 
                     href="#" 
                     className="w-10 h-10 rounded-full bg-dark-200 flex items-center justify-center hover:bg-electric/20 transition-colors duration-300 interactive"
                     aria-label="Twitter"
                   >
                     <Twitter size={18} />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

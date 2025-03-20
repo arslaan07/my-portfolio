@@ -84,7 +84,7 @@ const Hero = () => {
           <div className="md:w-1/2 order-2 md:order-1 mt-10 md:mt-0 text-center md:text-left">
             <div className="mb-4">
               <span className="inline-block py-1 px-3 rounded-full border border-purple/30 text-sm text-purple mb-4 animate-fade-in">
-                Hello to my world!
+                Hello world!
               </span>
             </div>
             

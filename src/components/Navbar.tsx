@@ -46,7 +46,7 @@ const Navbar = () => {
             href="#hero" 
             className="text-2xl font-bold text-purple hover:animate-glow transition-all duration-300"
           >
-            theLazyProgramR<span className="text-white">.</span>
+          theLazyProgramR<span className="text-white">.</span>
           </a>
           
           <nav className="hidden md:flex space-x-8">

@@ -21,34 +21,34 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, product filtering, cart functionality, and payment processing.',
-      image: 'https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      demoUrl: '#',
-      githubUrl: '#',
+      title: 'Spark-app',
+      description: "Help your followers discover everything you're sharing all over the internet, in one simple place. They'll thank you for it!",
+      image: './dashborad-analytics.png',
+      tags: ['React', 'Node.js', 'MongoDB', 'Express.js, Redux'],
+      demoUrl: 'https://myspark.netlify.app/',
+      githubUrl: 'https://github.com/arslaan07/spark-app',
       featured: true,
     },
     {
       id: 2,
       title: 'Task Management App',
       description: 'A productivity application for managing tasks and projects. Built with React and Firebase, featuring real-time updates, drag-and-drop functionality, and team collaboration.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      tags: ['React', 'Firebase', 'Styled Components'],
-      demoUrl: '#',
-      githubUrl: '#',
+      image: './pro.png',
+      tags: ['React', 'Node.js', 'MongoDB', 'Express.js, Redux'],
+      demoUrl: 'https://mykitly.netlify.app/',
+      githubUrl: 'https://github.com/arslaan07/mini-link-mgmt',
       featured: true,
     },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      description: 'An interactive weather application that provides real-time weather data and forecasts. Utilizes the OpenWeatherMap API and features geolocation, search functionality, and detailed weather metrics.',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80',
-      tags: ['React', 'API Integration', 'Chart.js'],
-      demoUrl: '#',
-      githubUrl: '#',
-      featured: false,
-    },
+    // {
+    //   id: 3,
+    //   title: 'Weather Dashboard',
+    //   description: 'An interactive weather application that provides real-time weather data and forecasts. Utilizes the OpenWeatherMap API and features geolocation, search functionality, and detailed weather metrics.',
+    //   image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80',
+    //   tags: ['React', 'API Integration', 'Chart.js'],
+    //   demoUrl: '#',
+    //   githubUrl: '#',
+    //   featured: false,
+    // },
   ];
   
   useEffect(() => {
@@ -154,7 +154,7 @@ const Projects = () => {
         </div>
         
         <div className="mt-16">
-          <h3 className="text-xl mb-8">Other Projects</h3>
+          {/* <h3 className="text-xl mb-8">Other Projects</h3> */}
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.filter(p => !p.featured).map((project, index) => (

@@ -17,15 +17,16 @@ const Skills = () => {
     { name: 'React', level: 90, category: 'frontend', icon: '⚛️' },
     { name: 'JavaScript', level: 85, category: 'frontend', icon: '🟨' },
     { name: 'HTML/CSS', level: 95, category: 'frontend', icon: '🌐' },
-    { name: 'TypeScript', level: 80, category: 'frontend', icon: '🔷' },
     { name: 'Node.js', level: 85, category: 'backend', icon: '🟢' },
     { name: 'Express', level: 80, category: 'backend', icon: '🚂' },
     { name: 'MongoDB', level: 75, category: 'backend', icon: '🍃' },
-    { name: 'SQL', level: 70, category: 'backend', icon: '📊' },
     { name: 'Git', level: 85, category: 'tools', icon: '🔄' },
-    { name: 'Docker', level: 65, category: 'tools', icon: '🐳' },
-    { name: 'AWS', level: 60, category: 'tools', icon: '☁️' },
+    { name: 'Docker', level: 60, category: 'tools', icon: '🐳' },
+    { name: 'AWS', level: 55, category: 'tools', icon: '☁️' },
     { name: 'UI/UX', level: 80, category: 'other', icon: '🎨' },
+    // { name: 'TypeScript', level: 80, category: 'frontend', icon: '🔷' },
+    // { name: 'SQL', level: 70, category: 'backend', icon: '📊' },
+    
   ];
   
   const filteredSkills = activeCategory === 'all' 

@@ -70,11 +70,10 @@ const About = () => {
               
               <div className="space-y-4">
                 {[
-                  { year: '2020', event: 'Started learning web development' },
-                  { year: '2021', event: 'Built first full-stack application' },
-                  { year: '2022', event: 'Joined tech startup as developer' },
-                  { year: '2023', event: 'Led team to build innovative product' },
-                  { year: 'Now', event: 'Working on cutting-edge projects' }
+                  { year: '2022', event: 'Wrote my first "Hello, World!" program, marking the beginning of my coding journey.' },
+                  { year: '2023', event: 'Focused on mastering Data Structures and Algorithms, strengthening my problem-solving skills.' },
+                  { year: '2024', event: 'Transitioned into full-stack development, building dynamic and scalable applications.' },
+                  { year: 'Now', event: 'Working on cutting-edge projects and continuously learning new technologies.' }
                 ].map((item, index) => (
                   <div key={index} className="flex">
                     <div className="w-20 font-mono text-electric/70">{item.year}</div>
