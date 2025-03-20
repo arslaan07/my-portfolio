@@ -36,7 +36,7 @@ const Hero = () => {
     // Terminal typing effect
     const terminalText = document.querySelector('.terminal-text');
     if (terminalText) {
-      const text = "const developer = {\n  name: 'theLazyProgramR',\n  skills: ['react', 'node', 'python'],\n  passion: 'creating clean, efficient code',\n  status: 'available for projects'\n};";
+      const text = "const developer = {\n  name: 'theLazyProgramR',\n  skills: ['react', 'node', 'mongo, express, js, c++'],\n  passion: 'creating clean, efficient code',\n  status: 'available for projects'\n};";
       let index = 0;
       
       const typeText = () => {

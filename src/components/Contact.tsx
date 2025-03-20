@@ -79,7 +79,7 @@ const Contact = () => {
                 <div>
                   <div className="text-sm text-muted-foreground">Email</div>
                   <a href="mailto:arslaanbanday5@gmail.com" className="hover:text-electric transition-colors duration-300">
-                    hello@thelazyprogramr.dev
+                    hello@thelazyprogramr.xyz
                   </a>
                 </div>
               </div>
